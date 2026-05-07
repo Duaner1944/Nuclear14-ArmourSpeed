@@ -4640,3 +4640,10 @@ Entries:
   id: 5839
   time: '2026-05-07T14:36:36.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/437
+- author: Vixting
+  changes:
+    - type: Tweak
+      message: gives vault sec engineering & medical access
+  id: 5840
+  time: '2026-05-07T14:44:21.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/440
