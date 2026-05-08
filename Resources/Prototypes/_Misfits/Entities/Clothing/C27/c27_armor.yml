@@ -78,7 +78,7 @@
         Radiation: 0.0 # explicit immunity (also in MisfitsC27Silicon modset)
   - type: Repairable  # #Misfits Add - weld repair for heavy plating
     fuelCost: 10
-    doAfterDelay: 100
+    doAfterDelay: 30
     qualityNeeded: Welding
   - type: Reflect # #Misfits Add - 20% ricochet on heavy plating; hardened combat chassis deflects most small/medium rounds. .50 bypasses via ignoreResistances:true ALSO BECAUSE OF SHITCODE I CANT REMOVE ENERGY DEFLECT BY ITSELF THE AI THEY HAD CODE REFLECT DECIDED REFLECT IN ITSELF DOES ENERGY DEFLECT
     reflects:
