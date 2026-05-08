@@ -79,7 +79,7 @@ public sealed class VinylPlayerSystem : EntitySystem
             || vinyl.Comp.Song == null)
             return;
 
-        var audio = _audio.PlayPredicted(vinyl.Comp.Song, uid, uid, AudioParams.Default.WithVolume(3f).WithMaxDistance(4.5f));
+        var audio = _audio.PlayPredicted(vinyl.Comp.Song, uid, uid, AudioParams.Default.WithVolume(-5f).WithMaxDistance(4.5f));
         if (audio != null)
             comp.SoundEntity = audio.Value.Entity;
 
