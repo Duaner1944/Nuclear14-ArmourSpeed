@@ -536,7 +536,7 @@
   cost: 5
   requirements:
     - !type:CharacterJobRequirement
-      traits:
+      jobs:
       - CaesarLegionCenturion
     - !type:CharacterItemGroupRequirement
       group: N14LoadoutMelee
