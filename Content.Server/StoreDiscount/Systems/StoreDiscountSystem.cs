@@ -25,7 +25,6 @@ public sealed class StoreDiscountSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<StoreInitializedEvent>(OnStoreInitialized);
         SubscribeLocalEvent<StoreBuyFinishedEvent>(OnBuyFinished);
     }
 
@@ -55,17 +54,17 @@ public sealed class StoreDiscountSystem : EntitySystem
         purchasedItem.Categories.Remove(DiscountedStoreCategoryPrototypeKey);
     }
 
-    /// <summary> Initialized discounts if required. </summary>
-    private void OnStoreInitialized(ref StoreInitializedEvent ev)
+    /// <summary> Initializes discounts for a store if required. </summary>
+    public void InitializeStoreDiscounts(EntityUid store, IReadOnlyList<ListingDataWithCostModifiers> listings, bool useDiscounts)
     {
-        if (!ev.UseDiscounts)
+        if (!useDiscounts || listings.Count == 0)
         {
             return;
         }
 
-        var discountComponent = EnsureComp<StoreDiscountComponent>(ev.Store);
-        var discounts = InitializeDiscounts(ev.Listings);
-        ApplyDiscounts(ev.Listings, discounts);
+        var discountComponent = EnsureComp<StoreDiscountComponent>(store);
+        var discounts = InitializeDiscounts(listings);
+        ApplyDiscounts(listings, discounts);
         discountComponent.Discounts = discounts;
     }
 
@@ -380,18 +379,3 @@ public sealed class StoreDiscountSystem : EntitySystem
         }
     }
 }
-
-/// <summary>
-/// Event of store being initialized.
-/// </summary>
-/// <param name="TargetUser">EntityUid of store entity owner.</param>
-/// <param name="Store">EntityUid of store entity.</param>
-/// <param name="UseDiscounts">Marker, if store should have discounts.</param>
-/// <param name="Listings">List of available listings items.</param>
-[ByRefEvent]
-public record struct StoreInitializedEvent(
-    EntityUid TargetUser,
-    EntityUid Store,
-    bool UseDiscounts,
-    IReadOnlyList<ListingDataWithCostModifiers> Listings
-);

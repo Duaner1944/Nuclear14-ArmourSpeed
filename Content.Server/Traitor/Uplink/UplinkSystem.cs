@@ -18,6 +18,7 @@ public sealed class UplinkSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly StoreSystem _store = default!;
+    [Dependency] private readonly StoreDiscountSystem _storeDiscounts = default!;
     [Dependency] private readonly SharedSubdermalImplantSystem _subdermalImplant = default!;
 
     [ValidatePrototypeId<CurrencyPrototype>]
@@ -69,13 +70,8 @@ public sealed class UplinkSystem : EntitySystem
             uplink,
             store);
 
-        var uplinkInitializedEvent = new StoreInitializedEvent(
-            TargetUser: user,
-            Store: uplink,
-            UseDiscounts: giveDiscounts,
-            Listings: _store.GetAvailableListings(user, uplink, store)
-                .ToArray());
-        RaiseLocalEvent(ref uplinkInitializedEvent);
+        var listings = _store.GetAvailableListings(user, uplink, store).ToArray();
+        _storeDiscounts.InitializeStoreDiscounts(uplink, listings, giveDiscounts);
     }
 
     /// <summary>
