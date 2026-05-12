@@ -4939,3 +4939,16 @@ Entries:
   id: 5869
   time: '2026-05-12T23:54:36.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/492
+- author: NajaTheNaja
+  changes:
+    - type: Fix
+      message: >-
+        promethine now requires 5u at once to cure, identical to AmbuzolPlus
+        from basegame.
+    - type: Fix
+      message: >-
+        HP and SP now require 10 hours of squire, just like regular paladin.
+        this wont impact anyone who meets the new paladin requirements. 
+  id: 5870
+  time: '2026-05-12T23:54:47.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/491
