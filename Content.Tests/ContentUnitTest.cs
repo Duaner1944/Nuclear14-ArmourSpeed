@@ -1,11 +1,9 @@
 using System.Collections.Generic;
 using System.Reflection;
 using Content.Client.IoC;
-using Content.Server._Misfits.FactionWar;
 using Content.Server.IoC;
 using Content.Shared.IoC;
 using Robust.Shared.Analyzers;
-using Robust.Shared.GameObjects;
 using Robust.UnitTesting;
 using EntryPoint = Content.Server.Entry.EntryPoint;
 
@@ -14,16 +12,6 @@ namespace Content.Tests
     [Virtual]
     public class ContentUnitTest : RobustUnitTest
     {
-        protected override void RegisterExtraSystems(IEntitySystemManager systems)
-        {
-            base.RegisterExtraSystems(systems);
-
-            if (Project == UnitTestProject.Server)
-            {
-                systems.LoadExtraSystemType<FactionWarSystem>();
-            }
-        }
-
         protected override void OverrideIoC()
         {
             base.OverrideIoC();
