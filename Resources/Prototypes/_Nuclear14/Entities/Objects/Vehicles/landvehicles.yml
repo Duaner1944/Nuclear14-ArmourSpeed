@@ -13,8 +13,8 @@
     netsync: false
     noRot: true
   - type: MovementSpeedModifier
-    acceleration: 8
-    friction: 1
+    acceleration: 6
+    friction: 0.1
     baseWalkSpeed: 8
     baseSprintSpeed: 10
   - type: ItemSlots
@@ -219,10 +219,11 @@
       params:
         variation: 0.125
   - type: MovementSpeedModifier
-    baseAcceleration: 8
-    baseFriction: 0.2 # wheels dont stop instantly
-    baseSprintSpeed: 6.5
-    baseWalkSpeed: 4.5 # default walking speed
+  - type: MovementSpeedModifier
+    acceleration: 6
+    friction: 0.1
+    baseWalkSpeed: 4
+    baseSprintSpeed: 8
   - type: ItemSlots
     slots:
       key_slot:
