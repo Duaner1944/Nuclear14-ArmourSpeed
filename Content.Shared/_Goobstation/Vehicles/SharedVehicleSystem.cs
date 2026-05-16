@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Actions;
@@ -28,6 +29,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
     [Dependency] private readonly SharedBuckleSystem _buckle = default!;
     [Dependency] private readonly SharedMoverController _mover = default!;
     [Dependency] private readonly SharedVirtualItemSystem _virtualItem = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
 
     public static readonly EntProtoId HornActionId = "ActionHorn";
     public static readonly EntProtoId SirenActionId = "ActionSiren";
@@ -178,12 +180,25 @@ public abstract partial class SharedVehicleSystem : EntitySystem
             return;
 
         ent.Comp.Driver = driver;
-        _appearance.SetData(ent.Owner, VehicleState.DrawOver, true);
+        _appearance.SetData(ent, VehicleState.DrawOver, true);
+
+        SetupOverlay(ent);
 
         if (!ent.Comp.EngineRunning)
             return;
 
-        Mount(driver, ent.Owner);
+        Mount(driver, ent);
+    }
+
+    private void SetupOverlay(Entity<VehicleComponent> ent)
+    {
+        if (ent.Comp.OverlayPrototype == null)
+            return;
+        var overlay = EntityManager.SpawnEntity(ent.Comp.OverlayPrototype, Transform(ent).Coordinates);
+        _transform.SetParent(overlay, ent);
+        _transform.SetLocalPosition(overlay, Vector2.Zero);
+        _transform.SetLocalRotation(overlay, Angle.Zero);
+        ent.Comp.ActiveOverlay = overlay;
     }
 
     private void OnUnstrapped(Entity<VehicleComponent> ent, ref UnstrappedEvent args)
@@ -236,12 +251,16 @@ public abstract partial class SharedVehicleSystem : EntitySystem
 
     private void Dismount(EntityUid driver, EntityUid vehicle)
     {
-        if (!TryComp<VehicleComponent>(vehicle, out var vehicleComp))
+        if (!TryComp<VehicleComponent>(vehicle, out var vehicleComp) || vehicleComp.Driver != driver)
             return;
 
-        if (vehicleComp.Driver != driver)
-            return;
+        vehicleComp.Driver = null;
 
+        if (vehicleComp.ActiveOverlay.HasValue)
+        {
+            EntityManager.QueueDeleteEntity(vehicleComp.ActiveOverlay.Value);
+            vehicleComp.ActiveOverlay = null;
+        }
         RemComp<RelayInputMoverComponent>(driver);
 
         vehicleComp.Driver = null;

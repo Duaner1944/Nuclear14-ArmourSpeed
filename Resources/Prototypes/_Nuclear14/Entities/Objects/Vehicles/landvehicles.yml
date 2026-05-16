@@ -183,3 +183,59 @@
           path: /Audio/Effects/Vehicle/vehiclestartup.ogg
           params:
             volume: -3
+
+- type: entity
+  id: VehicleBuggyOverlay
+  name: buggy overlay
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Vehicles/bikesbuggy.rsi
+    layers:
+      - state: buggy_dune_cover
+    noRot: true
+    drawdepth: OverMobs # Set the drawdepth here to be above players non-clickable
+  - type: Tag
+    tags:
+      - HideContextMenu
+  - type: Appearance
+
+- type: entity
+  id: VehicleBuggy
+  parent: BaseVehicle
+  name: buggy
+  description: Riding in my car after a beer, hey is that bump shaped like a jetfiend?.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Vehicles/bikesbuggy.rsi
+    layers:
+    - state: buggy_dune
+    noRot: true
+  - type: Vehicle
+    renderOver: None
+    overlayPrototype: VehicleBuggyOverlay
+    hornSound:
+      collection: BikeHorn
+      params:
+        variation: 0.125
+  - type: MovementSpeedModifier
+    baseAcceleration: 8
+    baseFriction: 0.2 # wheels dont stop instantly
+    baseSprintSpeed: 6.5
+    baseWalkSpeed: 4.5 # default walking speed
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: vehicle-slot-component-slot-name-keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+          - MotorbikeKeys
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -3
+  - type: ContainerContainer
+    containers:
+      crate_storage: !type:Container
