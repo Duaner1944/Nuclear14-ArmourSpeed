@@ -316,14 +316,14 @@
 
 
 # Misfits Add: Recipes for payloads because there is none for modular mines.
-- type: latheRecipe
-  id: N14ChemicalPayload
-  result: ChemicalPayload
-  category: N14Weapons
-  completetime: 10
-  materials:
-    Circuitry: 300
-    Steel: 400
+#- type: latheRecipe
+#  id: N14ChemicalPayload
+#  result: ChemicalPayload # Bill from misfits14 here: chem is a cancer when used in combat and sucks to try and balance for without making normal chem dogshit. Re-enable at your own peril.
+#  category: N14Weapons
+#  completetime: 10
+#  materials:
+#    Circuitry: 300
+#    Steel: 400
 
 - type: latheRecipe
   id: N14ExplosivePayload
