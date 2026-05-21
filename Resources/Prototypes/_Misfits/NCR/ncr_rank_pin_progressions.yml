@@ -27,7 +27,7 @@
     - min: 72000   # 20 hours
       entity: ClothingNeckPinNCRMajor
 
-# Medical Officers: Captain (O-3) → Major (O-4) at 20h NCR dept time
+# Medical Officers: Captain (O-3) → Major (O-4) at 20h
 - type: ncrRankPinProgression
   id: NCRMedicalOfficerPins
   jobs:
@@ -72,7 +72,7 @@
     - min: 216000  # 60 hours
       entity: ClothingNeckPinNCRMasterSergeant
 
-# Medic: PFC (E-3) → SPC (E-4) at 20h NCR dept → SGT (E-5) at 40h NCR dept
+# Medic: PFC (E-3) → SPC (E-4) at 20h NCR dept → SGT (E-5) at 40h
 - type: ncrRankPinProgression
   id: NCRMedicPins
   jobs:
