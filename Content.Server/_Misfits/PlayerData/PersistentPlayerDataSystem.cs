@@ -8,6 +8,8 @@ using Content.Server.GameTicking;
 using Content.Server.Mind;
 using Content.Shared._Misfits.PlayerData;
 using Content.Shared._Misfits.PlayerData.Components;
+using Content.Shared._Misfits.Special;
+using Content.Shared._Misfits.Special.Components;
 using Content.Shared._Misfits.SpecialStats; // #Misfits Add - SPECIAL effects event
 using Content.Shared.Mobs;
 using Content.Shared.Movement.Systems; // #Misfits Add - refresh movement speed after SPECIAL load
@@ -29,6 +31,7 @@ public sealed class PersistentPlayerDataSystem : EntitySystem
     [Dependency] private readonly MindSystem _mind = default!;
     // #Misfits Add - Used to re-evaluate movement speed after SPECIAL stats are loaded.
     [Dependency] private readonly MovementSpeedModifierSystem _movement = default!;
+    [Dependency] private readonly SharedSpecialSystem _special = default!;
 
     // #Misfits Add - Sawmill for data system logging
     private ISawmill _log = default!;
@@ -78,6 +81,9 @@ public sealed class PersistentPlayerDataSystem : EntitySystem
     {
         // Ensure the persistent data component exists on the player entity
         var comp = EnsureComp<PersistentPlayerDataComponent>(args.Mob);
+        var special = EnsureComp<SpecialComponent>(args.Mob);
+        _special.TrySetBaseValues(args.Mob, args.Profile.Special, special);
+        SyncPersistentSpecialFromComponent(args.Mob, comp, special);
 
         // Load immediately if the player is already attached (they will be for normal spawns)
         if (args.Player.AttachedEntity == args.Mob)
@@ -159,10 +165,27 @@ public sealed class PersistentPlayerDataSystem : EntitySystem
         if (comp.StatsConfirmed)
             return; // already locked — ignore replay
 
-        // Validate: each stat 1–10 and total budget ≤ 17 (7 minimum + 10 allocated)
+        // Validate: each stat 1-10 and total budget <= 40 (seven 5s plus five extra points).
         var vals = new[] { msg.Strength, msg.Perception, msg.Endurance, msg.Charisma, msg.Intelligence, msg.Agility, msg.Luck };
-        if (vals.Any(v => v < 1 || v > 10) || vals.Sum() > 17)
+        if (vals.Any(v => v < SpecialProfile.Minimum || v > SpecialProfile.Maximum) || vals.Sum() > SpecialProfile.MaxTotal)
             return;
+
+        var profile = new SpecialProfile
+        {
+            Strength = msg.Strength,
+            Perception = msg.Perception,
+            Endurance = msg.Endurance,
+            Charisma = msg.Charisma,
+            Intelligence = msg.Intelligence,
+            Agility = msg.Agility,
+            Luck = msg.Luck,
+        };
+
+        if (!profile.IsValid)
+            return;
+
+        var special = EnsureComp<SpecialComponent>(entity.Value);
+        _special.TrySetBaseValues(entity.Value, profile, special);
 
         comp.Strength     = msg.Strength;
         comp.Perception   = msg.Perception;
@@ -233,6 +256,8 @@ public sealed class PersistentPlayerDataSystem : EntitySystem
             _log.Error($"Failed to load player data for {characterName}: {ex}");
         }
 
+        SyncPersistentSpecialFromComponent(uid, comp);
+
         // Increment round counter exactly once per spawn
         if (!comp.RoundCountedThisRound)
         {
@@ -250,6 +275,33 @@ public sealed class PersistentPlayerDataSystem : EntitySystem
         // #Misfits Add - Trigger stat-driven gameplay effects (stamina pool, movement speed).
         RaiseLocalEvent(uid, new SpecialStatsReadyEvent());
         _movement.RefreshMovementSpeedModifiers(uid);
+    }
+
+    private void SyncPersistentSpecialFromComponent(EntityUid uid, PersistentPlayerDataComponent comp, SpecialComponent? special = null)
+    {
+        if (!Resolve(uid, ref special, false))
+        {
+            comp.Strength = SpecialProfile.DefaultValue;
+            comp.Perception = SpecialProfile.DefaultValue;
+            comp.Endurance = SpecialProfile.DefaultValue;
+            comp.Charisma = SpecialProfile.DefaultValue;
+            comp.Intelligence = SpecialProfile.DefaultValue;
+            comp.Agility = SpecialProfile.DefaultValue;
+            comp.Luck = SpecialProfile.DefaultValue;
+        }
+        else
+        {
+            comp.Strength = _special.GetBase(uid, SpecialStat.Strength, special);
+            comp.Perception = _special.GetBase(uid, SpecialStat.Perception, special);
+            comp.Endurance = _special.GetBase(uid, SpecialStat.Endurance, special);
+            comp.Charisma = _special.GetBase(uid, SpecialStat.Charisma, special);
+            comp.Intelligence = _special.GetBase(uid, SpecialStat.Intelligence, special);
+            comp.Agility = _special.GetBase(uid, SpecialStat.Agility, special);
+            comp.Luck = _special.GetBase(uid, SpecialStat.Luck, special);
+        }
+
+        comp.StatsConfirmed = true;
+        Dirty(uid, comp);
     }
 
     private void SavePlayer(PersistentPlayerDataComponent comp)
@@ -370,13 +422,13 @@ internal sealed class LegacyCharacterPlayerData
 {
     public string UserId { get; set; } = string.Empty;
     public string CharacterName { get; set; } = string.Empty;
-    public int Strength { get; set; } = 1;
-    public int Perception { get; set; } = 1;
-    public int Endurance { get; set; } = 1;
-    public int Charisma { get; set; } = 1;
-    public int Agility { get; set; } = 1;
-    public int Intelligence { get; set; } = 1;
-    public int Luck { get; set; } = 1;
+    public int Strength { get; set; } = SpecialProfile.DefaultValue;
+    public int Perception { get; set; } = SpecialProfile.DefaultValue;
+    public int Endurance { get; set; } = SpecialProfile.DefaultValue;
+    public int Charisma { get; set; } = SpecialProfile.DefaultValue;
+    public int Agility { get; set; } = SpecialProfile.DefaultValue;
+    public int Intelligence { get; set; } = SpecialProfile.DefaultValue;
+    public int Luck { get; set; } = SpecialProfile.DefaultValue;
     public int MobKills { get; set; }
     public int Deaths { get; set; }
     public int RoundsPlayed { get; set; }

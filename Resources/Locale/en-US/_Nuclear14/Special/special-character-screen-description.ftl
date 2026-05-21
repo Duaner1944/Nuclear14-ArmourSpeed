@@ -1,11 +1,11 @@
 # Description of Special labels in character creation screen
-special-character-creation-description-strength = Your physical power and ability to endure.
-special-character-creation-description-perception = Your awareness around you, and land shots.
-special-character-creation-description-endurance = Your body's resilience against elements.
-special-character-creation-description-charisma = Not currently implemented.
-special-character-creation-description-intelligence = Not currently implemented.
-special-character-creation-description-agility = Your swiftness and ease of movement.
-special-character-creation-description-luck = A strange force that seems to smile upon you.
+special-character-creation-description-strength = Slightly improves melee damage.
+special-character-creation-description-perception = Slightly improves ranged handling.
+special-character-creation-description-endurance = Slightly improves stamina resilience.
+special-character-creation-description-charisma = Reserved for social, barter, and reputation hooks.
+special-character-creation-description-intelligence = Reserved for crafting, medical, and skill hooks.
+special-character-creation-description-agility = Slightly changes movement speed.
+special-character-creation-description-luck = Adds a small chance for critical hits and lucky scavenging.
 
 # Title of Special labels in character creation screen
 special-character-creation-strength = Strength

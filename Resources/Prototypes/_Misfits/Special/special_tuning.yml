@@ -1,0 +1,9 @@
+- type: specialTuning
+  id: MisfitsSpecialTuning
+  strengthMeleeDamageMultiplierPerPoint: 0.015
+  perceptionSpreadReductionPerPoint: 0.004
+  enduranceStaminaCritThresholdPerPoint: 4
+  agilityMovementSpeedMultiplierPerPoint: 0.004
+  luckCriticalChancePerPoint: 0.005
+  luckCriticalDamageMultiplier: 1.5
+  luckLootChancePerPoint: 0.03
