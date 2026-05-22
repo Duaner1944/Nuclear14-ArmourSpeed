@@ -112,6 +112,7 @@
         factions:
           - PlayerSuperMutant
           - CaesarLegion
+          - Wastelander
   - !type:AddTraitSpecial
     traits: [ LanguageLatin ]
 - type: startingGear
@@ -159,6 +160,7 @@
       - type: NpcFactionMember
         factions:
           - PlayerSuperMutant
+          - Wastelander
 
 - type: startingGear
   id: SuperMutantRangerGear
@@ -202,6 +204,7 @@
       - type: NpcFactionMember
         factions:
           - PlayerSuperMutant
+          - Wastelander
 
 - type: startingGear
   id: SuperMutantTrooperGear
@@ -248,6 +251,7 @@
         factions:
           - PlayerSuperMutant  # keeps Loremaster/perk detection working
           - Rangers            # recognised as ally by NCR faction AI and tabs
+          - Wastelander
 
 - type: startingGear
   id: SuperMutantNCRRangerGear
@@ -298,6 +302,7 @@
         factions:
           - PlayerSuperMutant  # keeps Loremaster/perk detection working
           - NCR                # recognised as ally by NCR faction AI and tabs
+          - Wastelander
 
 - type: startingGear
   id: SuperMutantNCRTrooperGear
@@ -358,6 +363,8 @@
         warcryMessage: warcry-message-tribal
         warcryMessageCount: 6
         buffPopup: warcry-popup-buffed-tribal
+        excludedJobs:
+        - SuperMutantTribal
       - type: TribalHuntParticipant
         targetDepartment: Tribe
   - !type:AddTraitSpecial
@@ -421,6 +428,7 @@
         - type: NpcFactionMember
           factions:
             - PlayerSuperMutant
+            - Wastelander
             - Followers
         - type: CPRTraining
         - type: Sanitized
