@@ -105,7 +105,7 @@ namespace Content.Server.Construction
                 return baseDelay;
 
             var multiplier = intelligence >= SpecialProfile.DefaultValue
-                ? 1f - (intelligence - SpecialProfile.DefaultValue) * 0.2f
+                ? 1f - (intelligence - SpecialProfile.DefaultValue) * 0.1f
                 : 1f + (SpecialProfile.DefaultValue - intelligence) * 0.15f;
 
             return baseDelay * MathF.Max(0.1f, multiplier);
