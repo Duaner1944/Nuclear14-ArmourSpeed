@@ -107,7 +107,7 @@
   reactants:
     Oxygen:
       amount: 2
-    Plasma:
+    Uranium: ##changed from plasma to facilitate wasteland usage
       amount: 1
       catalyst: true
   products:
