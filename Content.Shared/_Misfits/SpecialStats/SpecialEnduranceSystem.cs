@@ -29,7 +29,6 @@ public sealed class SpecialEnduranceSystem : EntitySystem
 
         SubscribeLocalEvent<SpecialComponent, SpecialChangedEvent>(OnSpecialChanged);
         SubscribeLocalEvent<SpecialComponent, SpecialStatsReadyEvent>(OnStatsReady);
-        SubscribeLocalEvent<SpecialComponent, ComponentShutdown>(OnShutdown);
     }
 
     private void OnSpecialChanged(Entity<SpecialComponent> ent, ref SpecialChangedEvent args)
@@ -40,11 +39,6 @@ public sealed class SpecialEnduranceSystem : EntitySystem
     private void OnStatsReady(Entity<SpecialComponent> ent, ref SpecialStatsReadyEvent args)
     {
         ApplyEndurance(ent, false);
-    }
-
-    private void OnShutdown(Entity<SpecialComponent> ent, ref ComponentShutdown args)
-    {
-        ApplyEndurance(ent, true);
     }
 
     private void ApplyEndurance(Entity<SpecialComponent> ent, bool reset)
