@@ -34,7 +34,8 @@ public sealed class SpecialCombatSystem : EntitySystem
         var damage = args.BaseDamage;
         ApplyStrengthMeleeModifier(args.User, ref damage, special);
 
-        TryApplyLuckCritical(args.User, ref damage, special, null);
+        // Melee weapons use the same Luck crit curve as one-shot ranged weapons.
+        TryApplyLuckCritical(args.User, ref damage, special, uid);
 
         args.BonusDamage += damage - args.BaseDamage;
     }
