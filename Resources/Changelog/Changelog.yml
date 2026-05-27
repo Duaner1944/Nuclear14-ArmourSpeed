@@ -5903,3 +5903,12 @@ Entries:
   id: 5966
   time: '2026-05-27T17:39:29.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/613
+- author: Squagg
+  changes:
+    - type: Fix
+      message: >-
+        Prevented vault doors from being configured with multitools, while still
+        allowing Vault Door Controls to link to them.
+  id: 5967
+  time: '2026-05-27T22:05:29.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/616
