@@ -5942,3 +5942,10 @@ Entries:
   id: 5970
   time: '2026-05-28T02:26:59.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/615
+- author: Lucky
+  changes:
+    - type: Add
+      message: More doors for mappers
+  id: 5971
+  time: '2026-05-28T10:24:30.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/623
