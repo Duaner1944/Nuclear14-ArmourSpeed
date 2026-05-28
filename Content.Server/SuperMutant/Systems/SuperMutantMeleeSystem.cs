@@ -1,4 +1,5 @@
 using Content.Shared.Humanoid;
+using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Prototypes;
 using Robust.Shared.GameObjects;
@@ -14,10 +15,10 @@ public sealed class SuperMutantMeleeSystem : EntitySystem
         base.Initialize();
 
         // Listen for melee damage calculation (fired on the weapon). args.User is the attacker.
-        SubscribeLocalEvent<GetMeleeDamageEvent>(OnGetMeleeDamage);
+        SubscribeLocalEvent<MeleeWeaponComponent, GetMeleeDamageEvent>(OnGetMeleeDamage);
     }
 
-    private void OnGetMeleeDamage(ref GetMeleeDamageEvent args)
+    private void OnGetMeleeDamage(EntityUid uid, MeleeWeaponComponent component, ref GetMeleeDamageEvent args)
     {
         if (args.User == EntityUid.Invalid)
             return;
