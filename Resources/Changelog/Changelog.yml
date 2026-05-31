@@ -6252,3 +6252,10 @@ Entries:
   id: 5997
   time: '2026-05-31T23:38:57.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/652
+- author: HungryCuban
+  changes:
+    - type: Add
+      message: Do after for unbuckling others (Port)
+  id: 5998
+  time: '2026-05-31T23:39:16.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/653
