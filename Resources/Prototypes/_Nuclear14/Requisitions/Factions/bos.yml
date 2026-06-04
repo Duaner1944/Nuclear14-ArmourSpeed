@@ -7,7 +7,7 @@
   - type: RequisitionsAccount
     group: BoS
     startingBalance: 6000
-    gain: 50
+    gain: 25
 
 - type: entity
   parent: N14BaseCargoElevator
