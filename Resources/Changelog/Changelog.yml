@@ -6659,3 +6659,24 @@ Entries:
   id: 6036
   time: '2026-06-09T22:49:17.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/731
+- author: Big Block Bill
+  changes:
+    - type: Add
+      message: Added 1 damage to 7.62
+    - type: Tweak
+      message: made 22lr actually usable as a caliber (it still sucks.)
+    - type: Remove
+      message: Removed 1 damage from 5.56
+    - type: Tweak
+      message: >-
+        Nerfed plasma weapons a bit, the shots still hit the same the guns just
+        fire slower.
+    - type: Tweak
+      message: >-
+        changed out 80s kits for my version at the request of brady, we will see
+        how they perform.
+    - type: Tweak
+      message: nerfed deagle by 0.5 ROF, down from 3 to 2.5
+  id: 6037
+  time: '2026-06-09T22:52:43.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/730
