@@ -541,7 +541,7 @@
       - id: N14WeaponShotgunRiot 
       - id: N14MagazineShotgun20 
         amount: 2
-      - id: N14MagazineBox20gauge
+      - id: MagazineBox20gauge
       - id: ClothingBeltRope
       - id: N14WeaponPistol45Colt # #Misfits Change: .45 revolver Legion sidearm
       - id: N14MagazinePistol45
