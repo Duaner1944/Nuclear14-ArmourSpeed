@@ -6817,3 +6817,10 @@ Entries:
   id: 6051
   time: '2026-06-12T17:46:46.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/771
+- author: Ablankmann
+  changes:
+    - type: Fix
+      message: The automatic Wasteland Announcement is now less redundant.
+  id: 6052
+  time: '2026-06-12T18:02:04.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/759
