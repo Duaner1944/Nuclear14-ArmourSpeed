@@ -6896,3 +6896,10 @@ Entries:
   id: 6057
   time: '2026-06-13T17:04:22.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/776
+- author: pierow
+  changes:
+    - type: Fix
+      message: Fixes going sideways randomly during gameplay. (Maybe...)
+  id: 6058
+  time: '2026-06-13T17:10:14.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/782
