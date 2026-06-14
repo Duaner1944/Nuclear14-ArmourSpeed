@@ -6977,3 +6977,10 @@ Entries:
   id: 6065
   time: '2026-06-14T04:02:32.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/796
+- author: Wazura
+  changes:
+    - type: Tweak
+      message: Loadouts
+  id: 6066
+  time: '2026-06-14T04:08:46.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/787
