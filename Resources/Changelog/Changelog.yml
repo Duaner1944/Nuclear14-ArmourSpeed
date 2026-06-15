@@ -7115,3 +7115,30 @@ Entries:
   id: 6075
   time: '2026-06-15T02:24:44.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/807
+- author: cythisiax
+  changes:
+    - type: Fix
+      message: >-
+        [@Paige404's](https://github.com/Misfit-Sanctuary/nuclear-14/issues?q=is%3Apr+author%3Apaige404)'s
+        #804 
+    - type: Fix
+      message: >-
+        [@WazuraWasTaken](https://github.com/Misfit-Sanctuary/nuclear-14/issues?q=is%3Apr+author%3AWazuraWasTaken)'s
+        #802.
+  id: 6076
+  time: '2026-06-15T20:54:48.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/810
+- author: Squagg
+  changes:
+    - type: Add
+      message: Added an admin command to force a player onto an ally's side in a war.
+  id: 6077
+  time: '2026-06-15T20:55:14.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/809
+- author: Vixting
+  changes:
+    - type: Add
+      message: Added predicton / lag compensation from RMC
+  id: 6078
+  time: '2026-06-15T22:29:50.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/814
