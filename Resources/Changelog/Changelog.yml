@@ -7153,3 +7153,12 @@ Entries:
   id: 6079
   time: '2026-06-15T23:35:51.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/815
+- author: trashalice
+  changes:
+    - type: Add
+      message: Salt Runner vet ranger set
+    - type: Tweak
+      message: Commented back in prestige ranger armors both for field and vet
+  id: 6080
+  time: '2026-06-15T23:38:23.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/812
