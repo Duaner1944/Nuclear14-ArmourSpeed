@@ -352,6 +352,7 @@
   - type: OfferItem
   - type: LayingDown
     standingUpTime: 2.5
+    critCrawlSpeedModifier: 0.5 # Misfits Add: crawling while crit is half the speed of normal lying down
   - type: Shoving
   - type: BloodstreamAffectedByMass
     power: 0.6 # A minimum size felinid will have 30% blood, a minimum size vulp will have 60%, a maximum size oni will have ~200%

@@ -136,6 +136,9 @@
   # Misfits Change - stuns the grabbed target for 1 second on successful carry.
   - type: GrabStun
     stunTime: 1
+  - type: Tag # #Misfits Add - Super Mutants cannot ride mounts (too heavy)
+    tags:
+    - CannotRide
 
 - type: entity
   save: false
