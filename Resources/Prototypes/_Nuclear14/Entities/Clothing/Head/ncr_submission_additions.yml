@@ -56,13 +56,13 @@
 - type: entity
   parent: ClothingHeadBase
   id: N14ClothingHeadHatNCRStetson
-  name: NCR stetson
-  description: A sun-worn NCR field stetson favored by troopers who prefer a hat to a helmet.
+  name: NCR cavalry stetson
+  description: A sun-worn NCR field stetson favored by brahdo mounted cavalry troopers.
   components:
   - type: Sprite
-    sprite: _Nuclear14/Clothing/Head/FalloutHelmets/ncrstetson.rsi
+    sprite: _Nuclear14/Clothing/Head/FalloutHats/ncrstetson.rsi
   - type: Clothing
-    sprite: _Nuclear14/Clothing/Head/FalloutHelmets/ncrstetson.rsi
+    sprite: _Nuclear14/Clothing/Head/FalloutHats/ncrstetson.rsi
 
 - type: entity
   parent: ClothingHeadBase
