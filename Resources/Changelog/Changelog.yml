@@ -7491,3 +7491,10 @@ Entries:
   id: 6104
   time: '2026-06-19T05:39:29.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/851
+- author: Oli
+  changes:
+    - type: Tweak
+      message: sprite files to / from \ in for legion drip
+  id: 6105
+  time: '2026-06-19T16:39:32.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/848
