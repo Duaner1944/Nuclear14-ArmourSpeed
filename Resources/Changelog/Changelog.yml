@@ -7621,3 +7621,10 @@ Entries:
   id: 6120
   time: '2026-06-21T20:25:42.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/868
+- author: Bradysgaming
+  changes:
+    - type: Fix
+      message: Fixed Securitrons being playable as wastelanders
+  id: 6121
+  time: '2026-06-21T20:26:53.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/875
