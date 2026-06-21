@@ -48,7 +48,7 @@
     walkModifier: 0.975
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, ClothingOuterHardsuitBase]
+  parent: [ClothingOuterStorageBase, ClothingOuterHardsuitBase]
   id: N14ClothingOuterVolMatSuit
   name: VMHE suit
   description: A versatile and advanced development of the Vault-Tec Radsuit, the Volatile Materials and Hazardous Environments suit is designed to keep its user alive through a variety of circumstances. Built with lightweight impact jel underneath a layer of treated polybenzimidazole, its efficacy is proven against acid rains, radiation, and chemical explosions. "DO NOT PUNCTURE".
