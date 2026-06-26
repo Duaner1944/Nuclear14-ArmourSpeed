@@ -7822,3 +7822,37 @@ Entries:
   id: 6137
   time: '2026-06-25T01:04:54.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/891
+- author: paige404
+  changes:
+    - type: Add
+      message: >-
+        Added Feral Rage, a ghoul-exclusive negative perk that gradually turns
+        you feral. This progresses naturally over time, and the signs will
+        become increasingly severe and noticeable to others.
+    - type: Add
+      message: >-
+        Added an effect to reduce feralization to Promethine, RadAway, Rad-X,
+        and Bitterdrink. The latter two are only effective in later stages.
+        Nothing can turn a fully feral ghoul back to normal, though.
+    - type: Remove
+      message: Removed radiation immunity from ghouls. (Glowing ghouls remain immune.)
+    - type: Add
+      message: >-
+        Added radiation immunity to the Gamma Shield perk. Also reduced its
+        price.
+    - type: Tweak
+      message: Raised ghoul radiation resistance from 50% to 80%.
+    - type: Fix
+      message: >-
+        Ghoulified humans now properly receive ghoul resistances and radiation
+        healing. They have a 20% chance to receive Gamma Shield, and a 10%
+        chance to receive Feral Rage.
+    - type: Tweak
+      message: >-
+        Radiation healing (ghouls, glowing ghouls, super mutants) now heals Cold
+        and Caustic damage as well.
+    - type: Tweak
+      message: Unnatural Regeneration heals Cold damage again.
+  id: 6138
+  time: '2026-06-26T00:15:21.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/893
