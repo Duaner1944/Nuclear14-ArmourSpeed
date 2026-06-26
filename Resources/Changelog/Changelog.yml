@@ -7879,3 +7879,14 @@ Entries:
   id: 6141
   time: '2026-06-26T15:17:34.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/899
+- author: Squagg
+  changes:
+    - type: Add
+      message: Added the Brotherhood Squire Bag.
+    - type: Add
+      message: Added black and brown Brotherhood Squire Webbing variants.
+    - type: Tweak
+      message: BoS Squires now spawn with Squire Bag and black Squire Webbing.
+  id: 6142
+  time: '2026-06-26T20:36:41.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/900
