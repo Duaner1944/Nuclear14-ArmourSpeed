@@ -7938,3 +7938,18 @@ Entries:
   id: 6146
   time: '2026-06-27T04:28:37.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/904
+- author: JohnKieser
+  changes:
+    - type: Tweak
+      message: Adjusted NPC steering to overreact less when avoiding obstacles
+    - type: Fix
+      message: >-
+        NPCs with flags will break obstacles instead of dancing in-front of them
+        now
+    - type: Fix
+      message: >-
+        NPCs won't ignore unanchored objects anymore and will try to break
+        them(no more cheesing deathclaws) 
+  id: 6147
+  time: '2026-06-27T17:34:56.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/896
