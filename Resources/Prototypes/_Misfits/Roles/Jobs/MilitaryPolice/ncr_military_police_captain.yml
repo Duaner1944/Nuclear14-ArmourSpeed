@@ -33,6 +33,7 @@
         factions:
           - Wastelander
           - NCR
+      - type: GrantRangerCombat
 
 - type: startingGear
   id: NCRMilitaryPoliceCaptainGear
@@ -40,6 +41,7 @@
     head: N14ClothingHeadHatNCRBeretOfficer
     back: N14ClothingBackpackNCR
     jumpsuit: N14ClothingMPUniformNCRDesert
+    outerClothing: MisfitsNCRMPLieutenantArmor
     shoes: N14ClothingBootsCombatFilled
     belt: ClothingBeltNCR
     eyes: ClothingEyesGlassesSunglasses
