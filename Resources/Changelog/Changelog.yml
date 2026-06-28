@@ -7997,3 +7997,25 @@ Entries:
   id: 6151
   time: '2026-06-28T04:13:26.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/912
+- author: Operator
+  changes:
+    - type: Tweak
+      message: >-
+        Oilers fixed the eighties engines. They dont consume hundreds of gallons
+        of fuel anymore. They have 200u storage and consume it in around 25
+        minutes.
+    - type: Tweak
+      message: Oilers also added some armor plates. Their HP has been doubled to 500.
+    - type: Tweak
+      message: >-
+        They fixed the seatbelts, too. You can get off an exploding bike without
+        trying to 'pat it down'
+    - type: Tweak
+      message: >-
+        The gang finally stuffed some motorcycle manuals into their bike
+        flatpacks. Road rashes can complete their path up the chain.
+    - type: Fix
+      message: You cant bypass the refuel doafter with chem-transfers anymore.
+  id: 6152
+  time: '2026-06-28T04:14:38.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/911
