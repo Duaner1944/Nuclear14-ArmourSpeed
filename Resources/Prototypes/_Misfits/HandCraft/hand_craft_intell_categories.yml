@@ -765,27 +765,6 @@
     N14Gunpowder: 100
     Cardboard: 100
 
-- type: handCraftIntellRecipe
-  id: N14Magazine50AMR
-  minInt: 10
-  result: N14Magazine50AMR
-  completeTime: 5
-  materials:
-    Lead: 25
-    Steel: 50
-    N14Gunpowder: 25
-
-- type: handCraftIntellRecipe
-  id: MagazineBox50
-  minInt: 10
-  result: MagazineBox50
-  completeTime: 5
-  materials:
-    Lead: 150
-    Steel: 200
-    N14Gunpowder: 150
-    Cardboard: 100
-
 # guns
 - type: handCraftIntellRecipe
   id: N14HandCraftPipePistol
