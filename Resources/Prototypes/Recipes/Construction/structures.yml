@@ -1482,6 +1482,7 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  hide: false
   icon:
     sprite: Structures/conveyor.rsi
     state: conveyor_stopped_cw
