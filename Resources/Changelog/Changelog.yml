@@ -8297,3 +8297,10 @@ Entries:
   id: 6171
   time: '2026-06-30T13:40:11.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/939
+- author: Bradysgaming
+  changes:
+    - type: Tweak
+      message: Made BOS off duty not auto enlisted in wars
+  id: 6172
+  time: '2026-06-30T14:09:23.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/940
