@@ -1,4 +1,4 @@
--# #Misfits Add - MSL mantle sprites credited to Pinky109.
+# #Misfits Add - MSL mantle sprites credited to Pinky109.
 - type: entity
   parent: MisfitsNCRHeavyCombatArmor
   id: MisfitsNCRMSLArmor
