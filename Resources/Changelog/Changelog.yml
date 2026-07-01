@@ -8401,3 +8401,10 @@ Entries:
   id: 6177
   time: '2026-07-01T21:07:22.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/948
+- author: cythisiax
+  changes:
+    - type: Fix
+      message: 'Securitron had a floating [ERROR] like it was 2012 and Garrys Mod. '
+  id: 6178
+  time: '2026-07-01T22:03:32.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/949
