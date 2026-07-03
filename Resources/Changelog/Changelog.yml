@@ -8408,3 +8408,10 @@ Entries:
   id: 6178
   time: '2026-07-01T22:03:32.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/949
+- author: Bradysgaming
+  changes:
+    - type: Remove
+      message: Removed Deogratory spray decal
+  id: 6179
+  time: '2026-07-03T00:28:43.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/955
