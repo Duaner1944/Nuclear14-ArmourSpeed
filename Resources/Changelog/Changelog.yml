@@ -8548,3 +8548,12 @@ Entries:
   id: 6188
   time: '2026-07-05T18:14:52.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/966
+- author: Vixting
+  changes:
+    - type: Add
+      message: >-
+        int hand craft can use decimals now, leftover materials will be used for
+        future crafts where possible
+  id: 6189
+  time: '2026-07-05T18:22:09.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/960
