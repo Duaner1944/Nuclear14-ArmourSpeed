@@ -8630,3 +8630,10 @@ Entries:
   id: 6194
   time: '2026-07-08T02:20:36.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/983
+- author: cythisiax
+  changes:
+    - type: Tweak
+      message: Nerf fireStacks.
+  id: 6195
+  time: '2026-07-08T03:21:45.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/985
