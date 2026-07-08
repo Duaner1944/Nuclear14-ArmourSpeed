@@ -77,7 +77,7 @@
 
 - type: entity
   parent: N14IDCardVault
-  id: N14IDCardVaultCargo
+  id: MisfitsIDCardVaultCargo
   name: vault cargo specialist ID card
   components:
   - type: PresetIdCard
@@ -85,7 +85,7 @@
 
 - type: entity
   parent: N14IDCardVault
-  id: N14IDCardVaultCourier
+  id: MisfitsIDCardVaultCourier
   name: vault courier ID card
   components:
   - type: PresetIdCard
@@ -93,7 +93,7 @@
 
 - type: entity
   parent: N14IDCardVault
-  id: N14IDCardVaultSalvage
+  id: MisfitsIDCardVaultSalvage
   name: vault salvage specialist ID card
   components:
   - type: PresetIdCard

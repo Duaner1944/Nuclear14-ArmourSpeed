@@ -511,7 +511,7 @@
       - state: security
 
 - type: entity
-  id: N14SpawnPointVaultCargoSpecialist
+  id: MisfitsSpawnPointVaultCargoSpecialist
   parent: N14SpawnPointOverseer
   name: vault cargo specialist
   components:
@@ -523,7 +523,7 @@
       - state: engineer
 
 - type: entity
-  id: N14SpawnPointVaultCourier
+  id: MisfitsSpawnPointVaultCourier
   parent: N14SpawnPointOverseer
   name: vault courier
   components:
@@ -535,7 +535,7 @@
       - state: dweller
 
 - type: entity
-  id: N14SpawnPointVaultSalvageSpecialist
+  id: MisfitsSpawnPointVaultSalvageSpecialist
   parent: N14SpawnPointOverseer
   name: vault salvage specialist
   components:

@@ -38,7 +38,7 @@
     jumpsuit: ClothingUniformMailCarrier
     back: N14ClothingBackpackSatchelTrekker
     shoes: N14ClothingBootsBlack
-    id: N14VaultCourierPDA
+    id: MisfitsVaultCourierPDA
     ears: N14ClothingHeadsetVaultDweller
   storage: # Forge-Change
     back:

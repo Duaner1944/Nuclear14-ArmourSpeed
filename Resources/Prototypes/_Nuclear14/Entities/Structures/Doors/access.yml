@@ -494,7 +494,7 @@
 
 - type: entity
   parent: N14DoorBunkerVault
-  id: N14DoorBunkerLockedVaultCargo
+  id: MisfitsDoorBunkerLockedVaultCargo
   suffix: Vault Cargo Specialist, Locked
   components:
   - type: ContainerFill
@@ -505,7 +505,7 @@
 
 - type: entity
   parent: N14DoorBunkerVault
-  id: N14DoorBunkerLockedVaultCourier
+  id: MisfitsDoorBunkerLockedVaultCourier
   suffix: Vault Courier, Locked
   components:
   - type: ContainerFill
@@ -516,7 +516,7 @@
 
 - type: entity
   parent: N14DoorBunkerVault
-  id: N14DoorBunkerLockedVaultSalvage
+  id: MisfitsDoorBunkerLockedVaultSalvage
   suffix: Vault Salvage Specialist, Locked
   components:
   - type: ContainerFill

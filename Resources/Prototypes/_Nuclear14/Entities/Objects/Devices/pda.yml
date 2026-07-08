@@ -146,27 +146,27 @@
 
 - type: entity
   parent: N14BasePipboy
-  id: N14VaultCargoPDA
+  id: MisfitsVaultCargoPDA
   suffix: Vault, Cargo Specialist
   components:
   - type: Pda
-    id: N14IDCardVaultCargo
+    id: MisfitsIDCardVaultCargo
 
 - type: entity
   parent: N14BasePipboy
-  id: N14VaultCourierPDA
+  id: MisfitsVaultCourierPDA
   suffix: Vault, Courier
   components:
   - type: Pda
-    id: N14IDCardVaultCourier
+    id: MisfitsIDCardVaultCourier
 
 - type: entity
   parent: N14BasePipboy
-  id: N14VaultSalvagePDA
+  id: MisfitsVaultSalvagePDA
   suffix: Vault, Salvage Specialist
   components:
   - type: Pda
-    id: N14IDCardVaultSalvage
+    id: MisfitsIDCardVaultSalvage
 
 - type: entity
   parent: N14BasePipboy

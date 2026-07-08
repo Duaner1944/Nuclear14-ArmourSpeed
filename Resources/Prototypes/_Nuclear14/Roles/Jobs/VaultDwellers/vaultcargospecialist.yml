@@ -38,7 +38,7 @@
     jumpsuit: ClothingUniformJumpsuitQMTurtleneck
     back: N14ClothingBackpackVaultBlue # Forge-Change
     shoes: N14ClothingBootsBlack
-    id: N14VaultCargoPDA
+    id: MisfitsVaultCargoPDA
     belt: N14ClothingBeltUtilityFilled
     ears: N14ClothingHeadsetVaultDweller
   innerClothingSkirt: ClothingUniformJumpskirtQMTurtleneck
