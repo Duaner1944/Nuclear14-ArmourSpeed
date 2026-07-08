@@ -67,11 +67,11 @@
     event: !type:ToggleLawsScreenEvent
     useDelay: 0.5
 
-# [Changed by MisfitsCrew/Operator] Adds Station AI command actions for selecting and ordering ZAX NPC units through camera view.
+# [Changed by MisfitsCrew/Operator] Adds command actions for selecting and ordering ZAX NPC units through camera view.
 - type: entity
   id: ActionStationAiSelectNpc
   name: Select NPC
-  description: Selects or deselects an NPC for Station AI command orders.
+  description: Selects or deselects an NPC for command orders.
   components:
   - type: EntityTargetAction
     priority: -20

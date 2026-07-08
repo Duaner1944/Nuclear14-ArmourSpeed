@@ -24,7 +24,7 @@
   - type: IgnoreUIRange
   - type: StationAiHeld
   - type: StationAiOverlay
-  # [Changed by MisfitsCrew/Operator] Enables Station AI to track selected ZAX units and issue command actions.
+  # [Changed by MisfitsCrew/Operator] Enables tracking selected ZAX units and issuing command actions.
   - type: StationAiNpcCommander
   - type: ShowElectrocutionHUD
   - type: ActionGrant
@@ -33,7 +33,7 @@
     - ActionShowJobIcons
     - ActionSurvCameraLights
     - ActionAIViewLaws
-    # [Changed by MisfitsCrew/Operator] Grants the Station AI ZAX unit selection, movement, engagement, formation, and hold commands.
+    # [Changed by MisfitsCrew/Operator] Grants ZAX unit selection, movement, engagement, formation, and hold commands.
     - ActionStationAiSelectNpc
     - ActionStationAiClearNpcSelection
     - ActionStationAiMoveNpcs
@@ -341,7 +341,7 @@
 - type: entity
   id: PlayerStationAiEmpty
   name: Z.A.X. Core
-  description: A pre-war Z.A.X. mainframe adapted as the station's central artificial intelligence core.
+  description: A pre-war Z.A.X. mainframe adapted as a central command core.
   parent:
   - BaseStructure
   - AiHolder
