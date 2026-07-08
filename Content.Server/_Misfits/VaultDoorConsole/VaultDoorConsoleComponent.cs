@@ -1,6 +1,6 @@
-using Content.Shared._Nuclear14.VaultDoorConsole;
+using Content.Shared._Misfits.VaultDoorConsole;
 
-namespace Content.Server._Nuclear14.VaultDoorConsole;
+namespace Content.Server._Misfits.VaultDoorConsole;
 
 public enum VaultDoorConsoleDudEffect : byte
 {

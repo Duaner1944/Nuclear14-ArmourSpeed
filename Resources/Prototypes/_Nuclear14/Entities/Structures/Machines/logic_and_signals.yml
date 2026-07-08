@@ -85,7 +85,7 @@
     access: [["VaultControlsPanel"]] # Misfits Change - restricted to N14IDCardVaultOverseer only (not in AllAccess)
 
 - type: entity
-  id: N14DoorVaultExteriorControls
+  id: MisfitsDoorVaultExteriorControls
   parent: BaseStructure
   name: vault security terminal
   description: A weathered RobCo security terminal wired into the vault door's control network.

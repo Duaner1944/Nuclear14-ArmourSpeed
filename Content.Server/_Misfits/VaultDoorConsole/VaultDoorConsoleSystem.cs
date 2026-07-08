@@ -5,7 +5,7 @@ using Content.Server.Doors.Systems;
 using Content.Server.DeviceLinking.Components;
 using Content.Server.DeviceLinking.Systems;
 using Content.Server.Popups;
-using Content.Shared._Nuclear14.VaultDoorConsole;
+using Content.Shared._Misfits.VaultDoorConsole;
 using Content.Shared.Doors;
 using Content.Shared.Doors.Components;
 using Content.Shared.Interaction;
@@ -14,7 +14,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
-namespace Content.Server._Nuclear14.VaultDoorConsole;
+namespace Content.Server._Misfits.VaultDoorConsole;
 
 public sealed class VaultDoorConsoleSystem : EntitySystem
 {

@@ -1,6 +1,6 @@
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._Nuclear14.VaultDoorConsole;
+namespace Content.Shared._Misfits.VaultDoorConsole;
 
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]

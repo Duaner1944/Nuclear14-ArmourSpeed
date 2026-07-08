@@ -76,7 +76,7 @@
   - type: RadiationReceiver
   - type: Tag
     tags:
-    - N14PipBoy
+    - MisfitsPipBoy
   - type: CartridgeLoader
     preinstalled:
       - CrewManifestCartridge

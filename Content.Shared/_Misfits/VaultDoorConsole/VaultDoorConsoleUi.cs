@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._Nuclear14.VaultDoorConsole;
+namespace Content.Shared._Misfits.VaultDoorConsole;
 
 [Serializable, NetSerializable]
 public enum VaultDoorConsoleUiKey : byte

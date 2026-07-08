@@ -3,7 +3,7 @@ using Content.Shared.Popups;
 using Content.Shared.Tag;
 using Content.Shared.UserInterface;
 
-namespace Content.Shared._Nuclear14.VaultDoorConsole;
+namespace Content.Shared._Misfits.VaultDoorConsole;
 
 public sealed class SharedVaultDoorConsoleSystem : EntitySystem
 {
@@ -40,6 +40,6 @@ public sealed class SharedVaultDoorConsoleSystem : EntitySystem
     private bool HasPipBoy(EntityUid user)
     {
         return _inventory.TryGetSlotEntity(user, "id", out var idUid) &&
-               _tag.HasTag(idUid.Value, "N14PipBoy");
+               _tag.HasTag(idUid.Value, "MisfitsPipBoy");
     }
 }

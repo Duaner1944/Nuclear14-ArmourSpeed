@@ -1,6 +1,6 @@
-using Content.Shared._Nuclear14.VaultDoorConsole;
+using Content.Shared._Misfits.VaultDoorConsole;
 
-namespace Content.Client._Nuclear14.VaultDoorConsole;
+namespace Content.Client._Misfits.VaultDoorConsole;
 
 public sealed class VaultDoorConsoleBoundUserInterface : BoundUserInterface
 {

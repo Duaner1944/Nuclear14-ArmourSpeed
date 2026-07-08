@@ -1,9 +1,9 @@
 using Content.Server.Administration;
-using Content.Shared._Nuclear14.VaultDoorConsole;
+using Content.Shared._Misfits.VaultDoorConsole;
 using Content.Shared.Administration;
 using Robust.Shared.Toolshed;
 
-namespace Content.Server._Nuclear14.VaultDoorConsole;
+namespace Content.Server._Misfits.VaultDoorConsole;
 
 [ToolshedCommand, AdminCommand(AdminFlags.Debug)]
 public sealed class VaultDoorConsoleCommand : ToolshedCommand
