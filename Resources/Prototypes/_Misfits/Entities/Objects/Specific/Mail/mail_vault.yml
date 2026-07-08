@@ -728,6 +728,36 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseMail
+  id: MailVaultCargoMantle
+  suffix: vault-cargo-mantle
+  components:
+  - type: Mail
+    contents:
+    - id: ClothingNeckMantleQM
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailVaultCargoWinterCoat
+  suffix: vault-cargo-winter-coat
+  components:
+  - type: Mail
+    contents:
+    - id: ClothingOuterWinterCargo
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
+  id: MailVaultCargoWinterBoots
+  suffix: vault-cargo-winter-boots
+  components:
+  - type: Mail
+    contents:
+    - id: ClothingShoesBootsWinterCargo
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseMail
   id: MailVaultCargoShotgun
   suffix: vault-cargo-shotgun
   components:

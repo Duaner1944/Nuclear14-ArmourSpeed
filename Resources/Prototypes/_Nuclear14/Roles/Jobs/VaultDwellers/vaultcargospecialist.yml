@@ -34,14 +34,14 @@
 - type: startingGear
   id: VaultCargoSpecialistGear
   equipment:
-    jumpsuit: N14ClothingUniformJumpsuitVault14
+    head: ClothingHeadHatBeretLogi
+    jumpsuit: ClothingUniformJumpsuitQMTurtleneck
     back: N14ClothingBackpackVaultBlue # Forge-Change
     shoes: N14ClothingBootsBlack
     id: N14VaultCargoPDA
     belt: N14ClothingBeltUtilityFilled
     ears: N14ClothingHeadsetVaultDweller
-    pocket1: AppraisalTool
-  innerClothingSkirt: N14ClothingUniformJumpsuitVault14
+  innerClothingSkirt: ClothingUniformJumpskirtQMTurtleneck
   storage: # Forge-Change
     back:
     - N14Bandage

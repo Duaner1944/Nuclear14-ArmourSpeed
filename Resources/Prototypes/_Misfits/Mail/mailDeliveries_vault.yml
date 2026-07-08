@@ -63,6 +63,9 @@
       MailVaultCargoCaravanSuit: 0.4
       MailVaultCargoDuffel: 0.5
       MailVaultCargoShotgun: 0.15
+      MailVaultCargoMantle: 0.3
+      MailVaultCargoWinterCoat: 0.4
+      MailVaultCargoWinterBoots: 0.4
     VaultCourier:
       MailVaultCourierRevolver: 0.3
       MailVaultCourierBinoculars: 0.5

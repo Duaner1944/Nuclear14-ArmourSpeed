@@ -35,20 +35,23 @@
   id: VaultSalvageSpecialistGear
   equipment:
     head: ClothingHeadHatHardhatYellow
-    jumpsuit: N14ClothingUniformJumpsuitVault14
-    back: N14ClothingBackpackVaultBlue # Forge-Change
+    jumpsuit: ClothingUniformMNKBlackOveralls
+    back: ClothingBackpackSatchelSalvage
     shoes: N14ClothingBootsBlack
-    outerClothing: ClothingOuterVestHazard
+    mask: ClothingMaskGasMiner
     id: N14VaultSalvagePDA
-    belt: N14ClothingBeltUtilityFilled
+    belt: N14ClothingBeltLeatherPouches
     ears: N14ClothingHeadsetVaultDweller
     gloves: ClothingHandsGlovesColorYellow
   storage: # Forge-Change
     back:
     - N14Bandage
+    - N14Bandage
+    - N14Stimpak
     - N14CurrencyPrewarMoney100
     - Pickaxe
     - GeigerCounter
+    - N14Machete
     - VaultGuidePaper
 - type: playTimeTracker
   id: VaultSalvageSpecialist
