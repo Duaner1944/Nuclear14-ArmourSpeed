@@ -5,7 +5,7 @@
   desc: reagent-desc-Berserker-mixture
   physicalDesc: reagent-physical-desc-roaring
   flavor: sour
-  color: "4a0404"
+  color: "#4a0404"
   metabolisms:
     Medicine:
       metabolismRate: 0.25 #lasts a bit, hence the low 11u OD
