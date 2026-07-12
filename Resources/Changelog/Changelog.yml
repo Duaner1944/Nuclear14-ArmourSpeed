@@ -8837,3 +8837,14 @@ Entries:
   id: 6210
   time: '2026-07-11T23:12:44.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1005
+- author: Bradysgaming
+  changes:
+    - type: Remove
+      message: Removed All guns besides the 9mm from loadouts. Same for ammo.
+    - type: Tweak
+      message: >-
+        Anything that you can buy in the shop now cannot be gotten from
+        loadouts.
+  id: 6211
+  time: '2026-07-12T00:15:01.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1006
