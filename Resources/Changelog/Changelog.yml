@@ -8871,3 +8871,19 @@ Entries:
   id: 6213
   time: '2026-07-12T01:15:43.0000000+00:00'
   url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/1007
+- author: RedBookcase
+  changes:
+    - type: Tweak
+      message: (Hopefully) fixed issues with Brahmin Milk generation
+    - type: Tweak
+      message: >-
+        Cleansing powder now causes less drowsiness. Drowsiness can be reduced
+        as well by drinking Nuka Cola, Coffee, and other caffeinated beverages.
+    - type: Tweak
+      message: >-
+        Made tacmaps, indestructible at admin request, buff to the HP of Legion
+        & Yuma trees, and the Codex Altar to make accidental/grief destruction
+        less likely.
+  id: 6214
+  time: '2026-07-12T01:42:31.0000000+00:00'
+  url: https://github.com/Misfit-Sanctuary/nuclear-14/pull/990
