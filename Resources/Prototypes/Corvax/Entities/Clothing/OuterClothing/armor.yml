@@ -143,7 +143,7 @@
         Blunt: 0.70
         Slash: 0.70
         Piercing: 0.60 # prime is slightly above "recruit" so here is 5% extra resist. sprite does literally have more metal on it.
-        Heat: 0.70
+        Heat: 0.70 # worse on heat
   - type: ExplosionResistance
     damageCoefficient: 0.65
 #  - type: ClothingSpecialModifier
