@@ -113,7 +113,7 @@
   - type: Clothing
     sprite: Corvax/Clothing/OuterClothing/Armor/deanveteranarmor.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.95 # This should not be straight worse than Prime. Many picked prime over Veteran because of this. 
+    walkModifier: 0.95 # This should not be straight worse than Prime. Many picked Prime over Veteran because of this. 
     sprintModifier: 0.95 
   - type: Armor
     modifiers:
@@ -121,7 +121,7 @@
         Blunt: 0.65
         Slash: 0.65
         Piercing: 0.55 # Billy again. This shit is for veteran decani. 35% with 10% slow? you fuckin kidding me? buff to 45%.
-        Heat: 0.70 # legion should not have heat protection over Blunt/slash.
+        Heat: 0.65 # legion should not have heat protection over Blunt/slash. >:(
   - type: ExplosionResistance
     damageCoefficient: 0.60
 #  - type: ClothingSpecialModifier
@@ -140,10 +140,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65 # rebalanced to be much worse on heat
-        Slash: 0.65 
+        Blunt: 0.70
+        Slash: 0.70
         Piercing: 0.60 # prime is slightly above "recruit" so here is 5% extra resist. sprite does literally have more metal on it.
-        Heat: 0.75 # worse on heat
+        Heat: 0.70
   - type: ExplosionResistance
     damageCoefficient: 0.65
 #  - type: ClothingSpecialModifier
@@ -168,7 +168,7 @@
         Blunt: 0.70
         Slash: 0.70
         Piercing: 0.65 # liquid dogshit but you're the bitch decani. -Bill
-        Heat: 0.75 # worse on heat
+        Heat: 0.70
   - type: ExplosionResistance
     damageCoefficient: 0.65 # Heavy leather absorbs blasts and acts as padding
 #  - type: ClothingSpecialModifier
@@ -259,7 +259,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.80 # Legion shouldn't have same % as heat for blunt/slash
+        Blunt: 0.80
         Slash: 0.80
         Piercing: 0.75 # 20 fucking %? no. dogshit. here is 25%. You get nothing else. -Bill
         Heat: 0.85 #Legion is weak to heat
@@ -287,7 +287,7 @@
         Piercing: 0.85 # 10% is worse than some COATS btw. just want you to know that. gave them 15% -Bill
         Heat: 0.9 # Legion is weak to heat
   - type: ExplosionResistance
-    damageCoefficient: 0.90
+    damageCoefficient: 0.95
 
 - type: entity
   parent: N14FalloutArmorBase
@@ -308,7 +308,7 @@
         Blunt: 0.75
         Slash: 0.75
         Piercing: 0.70
-        Heat: 0.80 #metal does not offer any extra protection against heat.
+        Heat: 0.75 #metal does not offer any extra protection against heat.
   - type: ExplosionResistance
     damageCoefficient: 0.80
 
